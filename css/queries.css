@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px) {
+  .Hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Hero img {
+    display: none;
+  }
+  .feature-container {
+    flex-wrap: wrap;
+  }
+  .feature {
+    grid-template-columns: 1fr;
+  }
+}
