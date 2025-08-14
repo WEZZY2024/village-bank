@@ -1,3 +1,8 @@
+:root {
+  --skyblue: skyblue;
+  --lightSkyBlue: lightskyblue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@ nav {
   font-weight: 500;
 }
 .login-btn {
-  background-color: lightskyblue;
+  background-color: var(--lightSkyBlue);
   color: white;
   padding: 1.2rem 2.4rem;
   font-weight: 600;
@@ -68,7 +73,7 @@ nav {
   max-width: 500px;
 }
 .colored-text {
-  color: lightskyblue;
+  color: var(--lightSkyBlue);
 }
 .Hero-text h1 {
   font-size: 5rem;
@@ -77,7 +82,7 @@ nav {
   margin-bottom: 2.4rem;
 }
 .btn-primary {
-  background-color: lightskyblue;
+  background-color: var(--lightSkyBlue);
   color: white;
   padding: 1.2rem 2.4rem;
   font-weight: bold;
@@ -188,7 +193,7 @@ nav {
   width: 70%;
   padding: 9rem;
   border-radius: 30px;
-  background-color: lightblue;
+  background-color: var(--lightSkyBlue);
 }
 .call-items h2 {
   text-align: center;
