@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #ffffffcb;
+  background-color: #fdfdfdde;
   width: 100%;
 }
 .wrapper {
@@ -24,7 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 80%;
+  width: 100%;
   padding: 2rem 4rem;
   backdrop-filter: blur(20px);
 }
@@ -41,6 +41,9 @@ nav {
   color: #0a2540;
   font-weight: 500;
 }
+.nav-links a:hover {
+  border-bottom: 5px solid black;
+}
 .login-btn {
   background-color: var(--lightSkyBlue);
   color: white;
@@ -50,6 +53,9 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+  background-color: blue;
 }
 .Hero {
   background-color: #feff9f;
@@ -74,6 +80,7 @@ nav {
 }
 .colored-text {
   color: var(--lightSkyBlue);
+  font-weight: bold;
 }
 .Hero-text h1 {
   font-size: 5rem;
@@ -92,7 +99,7 @@ nav {
   transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: #fbbf24;
+  background-color: blue;
 }
 .Hero-links {
   margin-top: 2rem;
@@ -164,26 +171,35 @@ nav {
 .feature-card {
   align-items: center;
   padding: 3rem;
+  background-color: var(--lightSkyBlue);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
 }
+
 .feature-card h3 {
   padding-right: 2rem;
   padding-bottom: 2rem;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bold;
   font-family: sans-serif;
 }
 .feature-card p {
   font-size: 2rem;
-  font-family: sans-serif;
+  font-family: serif;
+  font-weight: 400;
   line-height: 1.2;
+  color: black;
 }
 #feature-img {
   width: 400px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 /* end feature section */
 /* call to action */
 .call-action {
-  min-height: 50vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,11 +215,13 @@ nav {
   text-align: center;
   font-size: 3rem;
   font-family: sans-serif;
+  font-weight: 600;
+  color: white;
   padding: 2rem;
   margin-bottom: 1rem;
 }
-.btn-join {
-  margin-left: 9rem;
+#btn-join {
+  margin-left: 26.5%;
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
@@ -211,12 +229,26 @@ nav {
   text-align: center;
   color: white;
   padding: 1.4rem 3.4rem;
-  font-weight: bold;
+  font-weight: 800;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color: skyblue;
+  background-color: rgb(117, 191, 221);
   transition: background-color 0.3s ease;
+}
+#btn-join:hover {
+  background-color: blue;
+}
+.footer {
+  padding: 1rem;
+  background-color: rgb(117, 191, 221);
+}
+.footer p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 400;
 }
 
 /* end call to action */
