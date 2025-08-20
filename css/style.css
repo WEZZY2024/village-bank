@@ -1,3 +1,11 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 :root {
   --skyblue: skyblue;
   --lightSkyBlue: lightskyblue;
@@ -83,9 +91,10 @@ nav {
   font-weight: bold;
 }
 .Hero-text h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: sans-serif;
-  line-height: 1.5;
+  line-height: 1.1;
+  letter-spacing: -1px;
   margin-bottom: 2.4rem;
 }
 .btn-primary {
@@ -113,10 +122,9 @@ nav {
 }
 /* about section */
 .About-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   border: 1px solid white;
   margin: 8rem;
   padding: 3rem;
@@ -124,24 +132,26 @@ nav {
 }
 .about-title {
   font-family: sans-serif;
-  font-size: 3rem;
+  font-size: 3.6rem;
+  letter-spacing: -1px;
   font-weight: bold;
   color: #0a2540;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 .about-text p {
   font-family: sans-serif;
   padding: 2rem;
-  margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: 1.5;
   font-weight: 500;
 }
 #about-image {
+  margin-top: 0px;
   width: 500px;
-  height: 500px;
+  height: 400px;
 }
 /* end about section */
 
@@ -185,10 +195,10 @@ nav {
   font-family: sans-serif;
 }
 .feature-card p {
-  font-size: 2rem;
-  font-family: serif;
+  font-size: 1.8rem;
+  font-family: sans-serif;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.7;
   color: black;
 }
 #feature-img {
